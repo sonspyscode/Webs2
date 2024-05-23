@@ -8,10 +8,10 @@ const app = express();
 app.use(compression());
 
 // Menetapkan direktori statis
-app.use(express.static(path.join('Tugas 4', 'public')));
+app.use(express.static(path.join('Webs2', 'public')));
 
-// Jalankan server pada port 3000
-const PORT = 3000;
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+// // Jika dijalankan diluar Github Pages, Jalankan server pada port 3000
+// const PORT = 3000;
+// app.listen(PORT, () => {
+//     console.log(`Server running on port ${PORT}`);
 });
